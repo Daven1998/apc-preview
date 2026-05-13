@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owner Dashboard Demo — Algarve Property Compliance</title>
+    <meta
+      name="description"
+      content="Live demo of the Algarve Property Compliance owner dashboard — see how compliance status, certificates and renewal reminders work for a single villa."
+    />
+    <meta name="theme-color" content="#006633" />
+
+    <!-- Fonts: General Sans (body) + Caveat (script accents) -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Favicon (Option C monogram) -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/fb-profile.png" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a href="index.html" class="logo logo--c" aria-label="Algarve Property Compliance home">
+          <span class="logo__mark" aria-hidden="true"><span>APC</span></span>
+          <span class="logo__name">
+            <span class="logo__top">Algarve Property Compliance</span>
+            <span class="logo__sub">Portuguese Rental Compliance</span>
+          </span>
+        </a>
+        <nav class="nav">
+          <ul class="nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="owner-dashboard.html" style="color: var(--color-accent);">Owner demo</a></li>
+            <li><a href="partner-portal.html">Partner portal</a></li>
+          </ul>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <a href="owner-dashboard.html" class="lang-switch__btn is-active" aria-current="true" lang="en" title="English">
+              <span class="flag flag--gb" aria-hidden="true"></span>
+              <span class="lang-switch__label">EN</span>
+            </a>
+            <a href="index-pt.html" class="lang-switch__btn" lang="pt" title="Português">
+              <span class="flag flag--pt" aria-hidden="true"></span>
+              <span class="lang-switch__label">PT</span>
+            </a>
+          </div>
+          <a href="index.html#waitlist" class="btn btn--accent">Join waiting list</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="dash">
+        <!-- ================ SIDEBAR ================ -->
+        <aside class="dash__sidebar">
+          <h3>Owner</h3>
+          <ul class="dash__menu">
+            <li>
+              <a href="#" class="is-active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Certificates
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Schedule
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Messages
+              </a>
+            </li>
+          </ul>
+
+          <h3>Property</h3>
+          <ul class="dash__menu">
+            <li>
+              <a href="#">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                Casa Limão
+              </a>
+            </li>
+          </ul>
+
+          <h3>Account</h3>
+          <ul class="dash__menu">
+            <li>
+              <a href="#">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
+                Profile
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                Billing
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- ================ MAIN ================ -->
+        <div class="dash__main">
+          <div class="dash__header">
+            <div>
+              <span class="dash__demo-banner">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>
+                Demo data — Casa Limão (Lagoa, Algarve)
+              </span>
+              <span class="dash__greeting">Welcome back, <span class="greeting__name">Sarah</span></span>
+              <h1 class="dash__title">Compliance overview</h1>
+              <p class="dash__subtitle">RNAL #76542/AL · 4 bedrooms · Sleeps 8 · Renews 12 March 2027</p>
+            </div>
+            <div style="display:flex; align-items:center; gap: var(--space-3);">
+              <a href="#" class="btn btn--ghost">Download PDF report</a>
+              <a href="index.html#waitlist" class="btn btn--accent">Sign up</a>
+            </div>
+          </div>
+
+          <!-- KPIs -->
+          <div class="kpi-row">
+            <div class="kpi">
+              <div class="kpi__label">Compliance score</div>
+              <div class="kpi__value">87 / 100</div>
+              <div class="kpi__delta kpi__delta--up">+12 since onboarding</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi__label">Items in good standing</div>
+              <div class="kpi__value">7 of 9</div>
+              <div class="kpi__delta">2 require attention</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi__label">Next action due</div>
+              <div class="kpi__value" style="font-size: var(--text-lg);">Gas inspection</div>
+              <div class="kpi__delta kpi__delta--down">In 14 days</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi__label">Estimated fine exposure</div>
+              <div class="kpi__value" style="color: var(--color-success);">&euro;0</div>
+              <div class="kpi__delta kpi__delta--up">Down from &euro;3,200</div>
+            </div>
+          </div>
+
+          <!-- Compliance status list -->
+          <div class="status-card" style="margin-bottom: var(--space-8);">
+            <div class="status-card__head">
+              <h2 class="status-card__title">Obligation status</h2>
+              <span style="font-size: var(--text-xs); color: var(--color-text-muted);">
+                Last sync &middot; 2 minutes ago
+              </span>
+            </div>
+
+            <div class="status-row">
+              <span class="status-light status-light--green" aria-label="In good standing"></span>
+              <div class="status-row__name">
+                Fire extinguishers
+                <small>2 &times; 6kg ABC powder &middot; 1 per floor</small>
+              </div>
+              <div class="status-row__date">
+                Next inspection
+                <strong>14 Apr 2027</strong>
+              </div>
+              <a href="#" class="status-row__action">View certificate</a>
+            </div>
+
+            <div class="status-row">
+              <span class="status-light status-light--green" aria-label="In good standing"></span>
+              <div class="status-row__name">
+                Smoke &amp; CO alarms
+                <small>5 units installed &middot; 2024 &middot; 10-year sealed</small>
+              </div>
+              <div class="status-row__date">
+                Next replacement
+                <strong>March 2034</strong>
+              </div>
+              <a href="#" class="status-row__action">View install report</a>
+            </div>
+
+            <div class="status-row">
+              <span class="status-light status-light--amber" aria-label="Action soon"></span>
+              <div class="status-row__name">
+                Gas installation inspection
+                <small>DGEG EIG required (boiler + hob + pool heater)</small>
+              </div>
+              <div class="status-row__date">
+                Due in
+                <strong>14 days</strong>
+              </div>
+              <a href="#" class="status-row__action">Book inspection</a>
+            </div>
+
+            <div class="status-row">
+              <span class="status-light status-light--green" aria-label="In good standing"></span>
+              <div class="status-row__name">
+                Energy Performance Certificate (EPC)
+                <small>Class C &middot; ADENE registered &middot; valid 10 years</small>
+              </div>
+              <div class="status-row__date">
+                Expires
+                <strong>09 Aug 2034</strong>
+              </div>
+              <a href="#" class="status-row__action">Download EPC</a>
+            </div>
+
+            <div class="status-row">
+              <span class="status-light status-light--green" aria-label="In good standing"></span>
+              <div class="status-row__name">
+                CERTIEL electrical certificate
+                <small>Active &middot; main panel last inspected 2023</small>
+              </div>
+              <div class="status-row__date">
+                Re-inspection
+                <strong>If altered</strong>
+              </div>
+              <a href="#" class="status-row__action">View certificate</a>
+            </div>
+
+            <div class="status-row">
+              <span class="status-light status-light--green" aria-label="In good standing"></span>
+              <div class="status-row__name">
+                AL signage pack
+                <small>AL plaque, evacuation plan, complaints book</small>
+              </div>
+              <div class="status-row__date">
+                Audited
+                <strong>22 Mar 2026</strong>
+              </div>
+              <a href="#" class="status-row__action">View checklist</a>
+            </div>
+
+            <div class="status-row">
+              <span class="status-light status-light--green" aria-label="In good standing"></span>
+              <div class="status-row__name">
+                AIMA guest registration
+                <small>3 check-ins this month &middot; all submitted within 24h</small>
+              </div>
+              <div class="status-row__date">
+                Last filing
+                <strong>Today, 09:42</strong>
+              </div>
+              <a href="#" class="status-row__action">View log</a>
+            </div>
+
+            <div class="status-row">
+              <span class="status-light status-light--green" aria-label="In good standing"></span>
+              <div class="status-row__name">
+                AL liability insurance
+                <small>ALEP/Zurich &middot; &euro;75,000 cover &middot; auto-renew on</small>
+              </div>
+              <div class="status-row__date">
+                Renews
+                <strong>11 Sep 2026</strong>
+              </div>
+              <a href="#" class="status-row__action">View policy</a>
+            </div>
+
+            <div class="status-row">
+              <span class="status-light status-light--red" aria-label="Action required"></span>
+              <div class="status-row__name">
+                Fire-rated door inspection (Premium)
+                <small>Available with Concierge plan &middot; FDA-certified inspector</small>
+              </div>
+              <div class="status-row__date">
+                Status
+                <strong>Not active</strong>
+              </div>
+              <a href="#" class="status-row__action">Upgrade plan</a>
+            </div>
+          </div>
+
+          <!-- Activity feed -->
+          <div class="status-card">
+            <div class="status-card__head">
+              <h2 class="status-card__title">Recent activity</h2>
+            </div>
+            <div class="status-row">
+              <span class="status-light status-light--green" aria-label="Done"></span>
+              <div class="status-row__name">
+                Fire extinguisher annual inspection completed
+                <small>By Tecnicagás Algarve &middot; Jorge Pereira</small>
+              </div>
+              <div class="status-row__date">
+                <strong>14 Apr 2026</strong>
+              </div>
+              <a href="#" class="status-row__action">PDF report</a>
+            </div>
+            <div class="status-row">
+              <span class="status-light status-light--green" aria-label="Done"></span>
+              <div class="status-row__name">
+                AIMA filing for guest stay (3 nights)
+                <small>Mr &amp; Mrs Watson &middot; UK passports &middot; 4 May 2026</small>
+              </div>
+              <div class="status-row__date">
+                <strong>04 May 2026, 09:42</strong>
+              </div>
+              <a href="#" class="status-row__action">View receipt</a>
+            </div>
+            <div class="status-row">
+              <span class="status-light status-light--amber" aria-label="Pending"></span>
+              <div class="status-row__name">
+                Gas inspection pre-booking confirmation sent
+                <small>Galp scheduled visit &middot; 20 May 2026, 10:00</small>
+              </div>
+              <div class="status-row__date">
+                <strong>02 May 2026</strong>
+              </div>
+              <a href="#" class="status-row__action">Reschedule</a>
+            </div>
+          </div>
+
+          <p style="margin-top: var(--space-8); font-size: var(--text-sm); color: var(--color-text-muted); text-align: center;">
+            This is a demonstration with example data. <a href="index.html#waitlist" style="color: var(--color-accent); font-weight: 600;">Join the waiting list</a> to get your own dashboard.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

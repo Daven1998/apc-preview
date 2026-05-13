@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Logo mockups — Algarve Property Compliance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;600;700;800&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cyan:#006633;
+    --lime:#D90708;
+    --navy:#0E2235;
+    --ink:#1a1a1a;
+    --bg:#F6F8FA;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);padding:32px;line-height:1.5}
+  h1{font-size:24px;font-weight:800;margin-bottom:6px}
+  p.lede{color:#5b6b7e;margin-bottom:32px;font-size:14px}
+  h2{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#5b6b7e;margin:48px 0 16px}
+  .row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:24px}
+  .card{background:#fff;border-radius:14px;border:1px solid #E5EAF0;padding:32px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:140px;box-shadow:0 1px 0 rgba(13,32,55,.04)}
+  .card.dark{background:var(--navy);color:#fff;border-color:transparent}
+  .card.tiny{padding:16px;min-height:64px}
+  .card.fb{background:linear-gradient(135deg,#0061ff,#60efff);min-height:200px;align-items:center;justify-content:center;padding:0}
+  .meta{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#94a3b6;margin-top:14px;font-weight:600}
+  .card.dark .meta{color:rgba(255,255,255,.5)}
+
+  /* ========== OPTION A — single flowing script ========== */
+  .logo-a{display:flex;align-items:center;gap:12px}
+  .logo-a .check{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--lime));display:grid;place-items:center;flex-shrink:0;box-shadow:0 4px 14px rgba(0,180,230,.3)}
+  .logo-a .check svg{width:18px;height:18px;stroke:#fff;stroke-width:3.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .logo-a .word{font-family:'Caveat',cursive;font-weight:700;font-size:38px;color:var(--cyan);line-height:1;letter-spacing:-.5px;white-space:nowrap}
+  .card.dark .logo-a .word{color:#fff}
+  .logo-a.tiny .check{width:22px;height:22px}
+  .logo-a.tiny .check svg{width:12px;height:12px}
+  .logo-a.tiny .word{font-size:24px}
+  .logo-a.fav{flex-direction:column;gap:0}
+  .logo-a.fav .check{width:64px;height:64px;border-radius:14px}
+  .logo-a.fav .check svg{width:34px;height:34px}
+
+  /* ========== OPTION B — bold sans + italic serif accent ========== */
+  .logo-b{display:flex;align-items:baseline;gap:8px;font-family:'Inter';line-height:1}
+  .logo-b .bold{font-weight:800;font-size:30px;color:var(--navy);letter-spacing:-.6px}
+  .logo-b .accent{font-family:'Playfair Display',serif;font-style:italic;font-weight:600;font-size:32px;color:var(--cyan);letter-spacing:-.4px}
+  .card.dark .logo-b .bold{color:#fff}
+  .logo-b.tiny .bold{font-size:18px}
+  .logo-b.tiny .accent{font-size:19px}
+  .logo-b.fav{flex-direction:column;align-items:center;gap:0;text-align:center}
+  .logo-b.fav .bold{font-size:18px;line-height:1}
+  .logo-b.fav .accent{font-size:18px;line-height:1.1}
+
+  /* ========== OPTION C — square monogram + wordmark ========== */
+  .logo-c{display:flex;align-items:center;gap:12px}
+  .logo-c .mark{width:46px;height:46px;border-radius:11px;background:linear-gradient(135deg,var(--cyan) 0%,var(--cyan) 50%,var(--lime) 50%,var(--lime) 100%);display:grid;place-items:center;color:#fff;font-weight:800;font-size:16px;letter-spacing:-.5px;font-family:'Inter';flex-shrink:0;box-shadow:0 4px 12px rgba(0,180,230,.25)}
+  .logo-c .mark span{display:block;text-shadow:0 1px 0 rgba(0,0,0,.08)}
+  .logo-c .name{display:flex;flex-direction:column;line-height:1.1}
+  .logo-c .name .top{font-weight:800;font-size:18px;color:var(--navy);letter-spacing:-.3px}
+  .logo-c .name .sub{font-size:10px;font-weight:600;color:#5b6b7e;text-transform:uppercase;letter-spacing:.14em;margin-top:3px}
+  .card.dark .logo-c .name .top{color:#fff}
+  .card.dark .logo-c .name .sub{color:rgba(255,255,255,.6)}
+  .logo-c.tiny .mark{width:30px;height:30px;border-radius:7px;font-size:11px}
+  .logo-c.tiny .name .top{font-size:13px}
+  .logo-c.tiny .name .sub{font-size:8px}
+  .logo-c.fav .mark{width:96px;height:96px;border-radius:22px;font-size:32px}
+  .logo-c.fav{justify-content:center}
+  .logo-c.fav .name{display:none}
+
+  /* ========== shared facebook profile preview ========== */
+  .fb-preview{width:140px;height:140px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 12px 40px rgba(0,0,0,.2);border:6px solid #fff}
+</style>
+</head>
+<body>
+<h1>Algarve Property Compliance — logo mockups</h1>
+<p class="lede">Three directions, shown at large size, small (header), and as a Facebook profile picture (140 × 140 circle on coloured background).</p>
+
+<!-- ============== OPTION A ============== -->
+<h2>Option A — Single flowing script + check mark</h2>
+<div class="row">
+  <div class="card">
+    <div class="logo-a">
+      <span class="check"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg></span>
+      <span class="word">Algarve Property Compliance</span>
+    </div>
+    <div class="meta">Large — on white</div>
+  </div>
+  <div class="card dark">
+    <div class="logo-a">
+      <span class="check"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg></span>
+      <span class="word">Algarve Property Compliance</span>
+    </div>
+    <div class="meta">Large — on navy</div>
+  </div>
+  <div class="card tiny">
+    <div class="logo-a tiny">
+      <span class="check"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg></span>
+      <span class="word">Algarve Property Compliance</span>
+    </div>
+    <div class="meta">Small (header size)</div>
+  </div>
+</div>
+<div class="row">
+  <div class="card fb">
+    <div class="fb-preview">
+      <div class="logo-a fav">
+        <span class="check"><svg viewBox="0 0 24 24"><polyline points="4,12 10,18 20,6"/></svg></span>
+      </div>
+    </div>
+  </div>
+  <div></div><div></div>
+</div>
+
+<!-- ============== OPTION B ============== -->
+<h2>Option B — Bold sans + italic serif accent</h2>
+<div class="row">
+  <div class="card">
+    <div class="logo-b">
+      <span class="bold">ALGARVE AL</span>
+      <span class="accent">Compliance</span>
+    </div>
+    <div class="meta">Large — on white</div>
+  </div>
+  <div class="card dark">
+    <div class="logo-b">
+      <span class="bold">ALGARVE AL</span>
+      <span class="accent">Compliance</span>
+    </div>
+    <div class="meta">Large — on navy</div>
+  </div>
+  <div class="card tiny">
+    <div class="logo-b tiny">
+      <span class="bold">ALGARVE AL</span>
+      <span class="accent">Compliance</span>
+    </div>
+    <div class="meta">Small (header size)</div>
+  </div>
+</div>
+<div class="row">
+  <div class="card fb">
+    <div class="fb-preview">
+      <div class="logo-b fav">
+        <span class="bold">ALGARVE</span>
+        <span class="accent">AL Compliance</span>
+      </div>
+    </div>
+  </div>
+  <div></div><div></div>
+</div>
+
+<!-- ============== OPTION C ============== -->
+<h2>Option C — Square monogram + wordmark (recommended)</h2>
+<div class="row">
+  <div class="card">
+    <div class="logo-c">
+      <div class="mark"><span>APC</span></div>
+      <div class="name">
+        <span class="top">Algarve Property Compliance</span>
+        <span class="sub">Portuguese rental compliance</span>
+      </div>
+    </div>
+    <div class="meta">Large — on white</div>
+  </div>
+  <div class="card dark">
+    <div class="logo-c">
+      <div class="mark"><span>APC</span></div>
+      <div class="name">
+        <span class="top">Algarve Property Compliance</span>
+        <span class="sub">Portuguese rental compliance</span>
+      </div>
+    </div>
+    <div class="meta">Large — on navy</div>
+  </div>
+  <div class="card tiny">
+    <div class="logo-c tiny">
+      <div class="mark"><span>APC</span></div>
+      <div class="name">
+        <span class="top">Algarve Property Compliance</span>
+        <span class="sub">Portuguese rental compliance</span>
+      </div>
+    </div>
+    <div class="meta">Small (header size)</div>
+  </div>
+</div>
+<div class="row">
+  <div class="card fb">
+    <div class="fb-preview">
+      <div class="logo-c fav">
+        <div class="mark"><span>APC</span></div>
+      </div>
+    </div>
+  </div>
+  <div></div><div></div>
+</div>
+
+</body>
+</html>

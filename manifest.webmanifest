@@ -1,0 +1,37 @@
+{
+  "name": "Algarve Property Compliance",
+  "short_name": "Algarve AL",
+  "description": "Portuguese AL holiday-rental compliance, project-managed in English. Gas, electrical, EPC, fire safety and AL registration in one annual fee.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0E2235",
+  "theme_color": "#0E2235",
+  "lang": "en",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    { "src": "img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "img/icon-256.png", "sizes": "256x256", "type": "image/png", "purpose": "any" },
+    { "src": "img/icon-384.png", "sizes": "384x384", "type": "image/png", "purpose": "any" },
+    { "src": "img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Pricing",
+      "url": "./index.html#pricing",
+      "description": "View Essential, Standard and Concierge plans"
+    },
+    {
+      "name": "Join the waiting list",
+      "url": "./index.html#waitlist",
+      "description": "Join the founding 50 waiting list"
+    },
+    {
+      "name": "Versão portuguesa",
+      "url": "./index-pt.html",
+      "description": "Open the Portuguese site"
+    }
+  ]
+}

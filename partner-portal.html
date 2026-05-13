@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partner Portal Demo — Algarve Property Compliance</title>
+    <meta
+      name="description"
+      content="Live demo of the Algarve Property Compliance partner portal — multi-property compliance health dashboard for property managers and agents."
+    />
+    <meta name="theme-color" content="#006633" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=boska@500,600,700&f[]=switzer@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/fb-profile.png" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a href="index.html" class="logo logo--c" aria-label="Algarve Property Compliance home">
+          <span class="logo__mark" aria-hidden="true"><span>APC</span></span>
+          <span class="logo__name">
+            <span class="logo__top">Algarve Property Compliance</span>
+            <span class="logo__sub">Portuguese Rental Compliance</span>
+          </span>
+        </a>
+        <nav class="nav">
+          <ul class="nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="owner-dashboard.html">Owner demo</a></li>
+            <li><a href="partner-portal.html" style="color: var(--color-accent);">Partner portal</a></li>
+          </ul>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <a href="partner-portal.html" class="lang-switch__btn is-active" aria-current="true" lang="en" title="English">
+              <span class="flag flag--gb" aria-hidden="true"></span>
+              <span class="lang-switch__label">EN</span>
+            </a>
+            <a href="index-pt.html" class="lang-switch__btn" lang="pt" title="Português">
+              <span class="flag flag--pt" aria-hidden="true"></span>
+              <span class="lang-switch__label">PT</span>
+            </a>
+          </div>
+          <a href="index.html#waitlist" class="btn btn--accent">Become a partner</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="dash">
+        <aside class="dash__sidebar">
+          <h3>Partner</h3>
+          <ul class="dash__menu">
+            <li>
+              <a href="#" class="is-active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
+                Owners
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                Commission
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
+                Reports
+              </a>
+            </li>
+          </ul>
+          <h3>Account</h3>
+          <ul class="dash__menu">
+            <li>
+              <a href="#">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
+                LovelyStay Algarve
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="dash__main">
+          <div class="dash__header">
+            <div>
+              <span class="dash__demo-banner">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>
+                Demo data — example partner: LovelyStay Algarve
+              </span>
+              <h1 class="dash__title">Portfolio compliance</h1>
+              <p class="dash__subtitle">12 properties under management &middot; £2,890 referral revenue YTD</p>
+            </div>
+            <div style="display:flex; align-items:center; gap: var(--space-3);">
+              <a href="#" class="btn btn--ghost">Export CSV</a>
+              <a href="#" class="btn btn--accent">Add property</a>
+            </div>
+          </div>
+
+          <!-- KPI row -->
+          <div class="kpi-row">
+            <div class="kpi">
+              <div class="kpi__label">Properties</div>
+              <div class="kpi__value">12</div>
+              <div class="kpi__delta kpi__delta--up">+3 this quarter</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi__label">Fully compliant</div>
+              <div class="kpi__value" style="color: var(--color-success);">9 / 12</div>
+              <div class="kpi__delta kpi__delta--up">75% &middot; +8pp YoY</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi__label">Action required</div>
+              <div class="kpi__value" style="color: var(--color-warning);">3</div>
+              <div class="kpi__delta">Within 30 days</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi__label">Commission YTD</div>
+              <div class="kpi__value">£2,890</div>
+              <div class="kpi__delta kpi__delta--up">£840 unbilled</div>
+            </div>
+          </div>
+
+          <!-- Property table -->
+          <div class="property-table">
+            <div class="property-row property-row--head">
+              <div>Property</div>
+              <div>Owner</div>
+              <div class="property-row__cell" title="Fire">🔥</div>
+              <div class="property-row__cell" title="Gas">⛽</div>
+              <div class="property-row__cell" title="EPC">⚡</div>
+              <div class="property-row__cell" title="CERTIEL">🔌</div>
+              <div class="property-row__cell" title="Insurance">🛡</div>
+              <div class="property-row__overall">Overall</div>
+            </div>
+
+            <div class="property-row">
+              <div class="property-row__name">
+                Casa Limão
+                <small>Lagoa &middot; 4 BR &middot; sleeps 8</small>
+              </div>
+              <div class="property-row__owner">M. Watson</div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--amber"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__overall"><span class="overall-badge overall-badge--warn">87 / 100</span></div>
+            </div>
+
+            <div class="property-row">
+              <div class="property-row__name">
+                Quinta da Oliveira
+                <small>Vale do Lobo &middot; 6 BR &middot; sleeps 12</small>
+              </div>
+              <div class="property-row__owner">J. Hartley</div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__overall"><span class="overall-badge overall-badge--good">100 / 100</span></div>
+            </div>
+
+            <div class="property-row">
+              <div class="property-row__name">
+                Villa Mirante
+                <small>Albufeira &middot; 3 BR &middot; sleeps 6</small>
+              </div>
+              <div class="property-row__owner">A. Patel</div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__overall"><span class="overall-badge overall-badge--good">96 / 100</span></div>
+            </div>
+
+            <div class="property-row">
+              <div class="property-row__name">
+                Casa do Pescador
+                <small>Tavira &middot; 2 BR &middot; sleeps 4</small>
+              </div>
+              <div class="property-row__owner">D. Naughton</div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__overall"><span class="overall-badge overall-badge--good">100 / 100</span></div>
+            </div>
+
+            <div class="property-row">
+              <div class="property-row__name">
+                Quinta do Sol
+                <small>Quinta do Lago &middot; 5 BR &middot; sleeps 10</small>
+              </div>
+              <div class="property-row__owner">R. Stone</div>
+              <div class="property-row__cell"><span class="status-light status-light--red"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--amber"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__overall"><span class="overall-badge overall-badge--bad">62 / 100</span></div>
+            </div>
+
+            <div class="property-row">
+              <div class="property-row__name">
+                Casa Branca
+                <small>Carvoeiro &middot; 3 BR &middot; sleeps 6</small>
+              </div>
+              <div class="property-row__owner">S. Whitford</div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--amber"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__overall"><span class="overall-badge overall-badge--warn">82 / 100</span></div>
+            </div>
+
+            <div class="property-row">
+              <div class="property-row__name">
+                Casa Almar
+                <small>Praia da Luz &middot; 4 BR &middot; sleeps 8</small>
+              </div>
+              <div class="property-row__owner">P. Sinclair</div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__overall"><span class="overall-badge overall-badge--good">98 / 100</span></div>
+            </div>
+
+            <div class="property-row">
+              <div class="property-row__name">
+                Quinta dos Cedros
+                <small>Loulé &middot; 5 BR &middot; sleeps 10</small>
+              </div>
+              <div class="property-row__owner">M. Mendes</div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__overall"><span class="overall-badge overall-badge--good">94 / 100</span></div>
+            </div>
+
+            <div class="property-row">
+              <div class="property-row__name">
+                Casa Atlântico
+                <small>Sagres &middot; 3 BR &middot; sleeps 6</small>
+              </div>
+              <div class="property-row__owner">G. Lawrence</div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--amber"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__overall"><span class="overall-badge overall-badge--warn">85 / 100</span></div>
+            </div>
+
+            <div class="property-row">
+              <div class="property-row__name">
+                Vila Nova
+                <small>Lagos &middot; 4 BR &middot; sleeps 8</small>
+              </div>
+              <div class="property-row__owner">B. Maguire</div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__overall"><span class="overall-badge overall-badge--good">92 / 100</span></div>
+            </div>
+
+            <div class="property-row">
+              <div class="property-row__name">
+                Casa Pôr-do-Sol
+                <small>Olhão &middot; 2 BR &middot; sleeps 4</small>
+              </div>
+              <div class="property-row__owner">F. Costa</div>
+              <div class="property-row__cell"><span class="status-light status-light--red"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--red"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--amber"></span></div>
+              <div class="property-row__overall"><span class="overall-badge overall-badge--bad">48 / 100</span></div>
+            </div>
+
+            <div class="property-row">
+              <div class="property-row__name">
+                Vila Olival
+                <small>Faro &middot; 3 BR &middot; sleeps 6</small>
+              </div>
+              <div class="property-row__owner">N. Ferreira</div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__cell"><span class="status-light status-light--green"></span></div>
+              <div class="property-row__overall"><span class="overall-badge overall-badge--good">95 / 100</span></div>
+            </div>
+          </div>
+
+          <!-- Partner perks -->
+          <div style="margin-top: var(--space-12);">
+            <div class="section-header">
+              <span class="section-header__eyebrow">Partner programme</span>
+              <h2 class="section-header__title">How partners earn with us</h2>
+            </div>
+
+            <div class="feature-grid">
+              <div class="feature-card">
+                <div class="feature-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <h3 class="feature-card__title">20% recurring</h3>
+                <p class="feature-card__body">
+                  Earn 20% of every subscription paid by an owner you refer &mdash; for the lifetime
+                  of the customer. No volume caps.
+                </p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 22h20z"/></svg>
+                </div>
+                <h3 class="feature-card__title">Single dashboard</h3>
+                <p class="feature-card__body">
+                  See compliance health for every villa you manage in one view. Export reports for
+                  your own client meetings.
+                </p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                </div>
+                <h3 class="feature-card__title">Direct WhatsApp line</h3>
+                <p class="feature-card__body">
+                  Dedicated partner WhatsApp for urgent compliance questions, escalations and your
+                  toughest 10+ guest villa cases.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p style="margin-top: var(--space-8); font-size: var(--text-sm); color: var(--color-text-muted); text-align: center;">
+            This is a demonstration with example data. <a href="index.html#waitlist" style="color: var(--color-accent); font-weight: 600;">Join the waiting list</a> to discuss a partnership.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
